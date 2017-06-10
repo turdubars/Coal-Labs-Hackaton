@@ -3,16 +3,24 @@
 
 <head>
     <title>Welcome to HC!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 <center>
-	<form method=post action="/counter" enctype=multipart/form-data>
+	<img src="/static/service/loading.gif" style="display: none;" id="loading" />
+	<form method=post action="/counter" enctype=multipart/form-data id="upload_form">
 		<p><input type="file" name="file">
 		<input type="submit" value="Upload">
 	</form>
 </center>
+
+
 </body>
 
 </html>
